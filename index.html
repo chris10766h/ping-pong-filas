@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Ping Pong Queue PRO</title>
+  <title>Ping Pong </title>
   <style>
     body { font-family: Arial; background:#0f172a; color:white; text-align:center; }
     input, select, button { padding:10px; margin:5px; border-radius:8px; border:none; }
@@ -15,7 +15,7 @@
 </head>
 <body>
 
-<h1>🏓 Ping Pong Queue PRO</h1>
+<h1>🏓 Ping Pong</h1>
 
 <input id="playerName" placeholder="Nombre jugador">
 <button onclick="addPlayer()">Agregar</button>
@@ -180,7 +180,7 @@ function render(){
 
     queueList.appendChild(li);
 
-    if(i<4){
+    if(i<30){
       const n=document.createElement('li');
       n.textContent=p;
       nextList.appendChild(n);
