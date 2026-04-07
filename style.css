@@ -97,3 +97,47 @@ li button {
   padding: 5px 10px;
   font-size: 12px;
 }
+/* 📱 AJUSTES PARA MÓVIL */
+@media (max-width: 768px) {
+
+  body {
+    padding: 10px;
+  }
+
+  /* Header en columna */
+  header {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+
+  header img {
+    width: 60px;
+  }
+
+  header h1 {
+    font-size: 20px;
+  }
+
+  /* Inputs y botones apilados */
+  input, select, button {
+    width: 60%;
+    margin: 5px 0;
+  }
+ 
+  /* Grid pasa a una sola columna */
+  .container {
+    grid-template-columns: 1fr;
+  }
+
+  /* Cards más compactas */
+  .card {
+    padding: 15px;
+  }
+
+  /* Listas más legibles */
+  li {
+    font-size: 14px;
+  }
+
+}
