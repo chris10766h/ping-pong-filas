@@ -3,23 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <title>Ping Pong </title>
-  <style>
-    body { font-family: Arial; background:#0f172a; color:white; text-align:center; }
-    input, select, button { padding:10px; margin:5px; border-radius:8px; border:none; }
-    button { background:#22c55e; color:white; cursor:pointer; }
-    .player-input { background-color: #213452; display:inline-block; }
-    .danger { background:#ef4444; }
-    .container { display:grid; grid-template-columns:1fr 1fr 1fr; gap:20px; margin-top:20px; }
-    .card { background:#1e293b; padding:15px; border-radius:12px; }
-    li { margin:5px 0; }
-  </style>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
+<header>
+  <img src="ping .png" alt="Ping " width="100px">
+   <h1> Ping Pong</h1>
+  <img src="pong.png" alt="Pong" width="100px">
+</header>
 
-<h1 >🏓 Ping Pong</h1>
-
-<div class="player-input">
-  <input id="playerName" placeholder="Nombre jugador">
+<div></div>
+<input id="playerName" placeholder="Nombre jugador">
 <button onclick="addPlayer()">Agregar</button>
 
 <select id="mode">
@@ -28,7 +22,6 @@
 </select>
 
 <button onclick="startGame()">Iniciar</button>
-</div>
 
 <div class="container">
   <div class="card">
